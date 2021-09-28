@@ -33,7 +33,7 @@ namespace API.Controllers
         }
 
         [HttpGet("server-error")]
-        public ActionResult<string> GetServererror()
+        public ActionResult<string> GetServerError()
         {
             var thing = _context.Users.Find(-1);
 
