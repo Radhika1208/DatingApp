@@ -53,7 +53,6 @@ namespace API.Controllers
 
         }
 
-        [HttpPut]
         public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
         {
             var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
